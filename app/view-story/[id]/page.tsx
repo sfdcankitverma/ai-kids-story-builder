@@ -15,7 +15,7 @@ import {
 
 function ViewStory({ params }: any) {
   const [story, setStory] = useState<any>();
-  const bookRef = useRef();
+  const bookRef = useRef<any>(null);
   const [count, setCount] = useState(0);
   useEffect(() => {
     console.log(params.id);
@@ -63,7 +63,7 @@ function ViewStory({ params }: any) {
           <div
             className="absolute -left-5 top-[250px]"
             onClick={() => {
-              bookRef.current.pageFlip().flipPrev();
+              bookRef.current?.pageFlip().flipPrev();
               setCount(count - 1);
             }}
           >
@@ -74,7 +74,7 @@ function ViewStory({ params }: any) {
           <div
             className="absolute -right-5 top-[250px]"
             onClick={() => {
-              bookRef.current.pageFlip().flipNext();
+              bookRef.current?.pageFlip().flipNext();
               setCount(count + 1);
             }}
           >
