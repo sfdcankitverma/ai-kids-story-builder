@@ -29,10 +29,6 @@ function Header() {
         {
             name:'Explore Stories',
             path:'/explore'
-        },
-        {
-            name:'Contact Us',
-            path:'/contact-us'
         }
     ]
     const [isMenuOpen,setIsMenuOpen]=useState(false);
