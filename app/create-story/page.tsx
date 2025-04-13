@@ -12,7 +12,7 @@ import { StoryData, Users } from '@/config/schema'
 import uuid4 from "uuid4";
 import CustomLoader from './_components/CustomLoader'
 import axios from 'axios'
-import router, { useRouter } from 'next/router'
+import router, { useRouter } from 'next/navigation'
 import { useUser } from '@clerk/nextjs'
 import { toast } from 'react-toastify'
 import { UserDetailContext } from '../_context/UserDetailContext'
